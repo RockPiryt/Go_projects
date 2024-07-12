@@ -29,11 +29,13 @@ func main() {
 	person3Pointer := &person3
 	person3Pointer.updateName("Tommy")
 
+	// Version without write pointer
+	person3.updateName("Placek")
+
 	person3.print()
 }
 
 //pointer's method
-
 func (pointerToPerson *person) updateName(newFirstName string) {
 	(*pointerToPerson).firstName = newFirstName
 }
