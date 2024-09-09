@@ -2,8 +2,9 @@ package main
 
 import "fmt"
 
-type book string
+type book string // classa ksiązka wraz z typem
 
+//w nawiasie jaki argument (b) jakiej clasy(book)
 func (b book) printTitle() {
 	fmt.Println(b)
 }

@@ -8,12 +8,12 @@ import (
 	"time"
 )
 
-// inicjalizacja typu
+// inicjalizacja klasy
 type deck []string
 
 // Funkcja tworząca stos kart
 func newDeck() deck {
-	// inicjalizacja type deck slice - przypisanie do zmiennej
+	// utworzenie isntancji klasy
 	cards := deck{}
 
 	//slice - grow and shrink
