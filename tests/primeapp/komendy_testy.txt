@@ -1,0 +1,9 @@
+go mod init primeapp
+
+go test .                               - puszczenie testów
+go test -v .                            - puszczenie testów z verbose
+go test -v -run TestAlertsDefinitionsGetList  - puszczenie konkretnego testu
+
+go test -cover .                        - stopień pokrycia testami 
+go test -coverprofile=coverage.out      - zapisanie do pliku z informacjami na temat pokycia
+go tool cover -html=coverage.out        - narzędzie pokazujace który kod został pokryty w formie html
